@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/hello_cmake_02.cpp
+iostream
+-
+string
+-
+message.hpp
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/message.hpp
+
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/message.hpp
+iostream
+-
+string
+-
+

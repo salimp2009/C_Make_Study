@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>49987175-B062-41A6-A53D-8A4192ED2CA2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.tool</string>
+			<key>fileName</key>
+			<string>49987175-B062-41A6-A53D-8A4192ED2CA2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>hello_cmake-dxdssbftwejhslfoenmudsbnsgva</string>
+			<key>timeStartedRecording</key>
+			<real>601682759.64504504</real>
+			<key>timeStoppedRecording</key>
+			<real>601682759.64954495</real>
+			<key>title</key>
+			<string>Build target hello_cmake</string>
+			<key>uniqueIdentifier</key>
+			<string>49987175-B062-41A6-A53D-8A4192ED2CA2</string>
+		</dict>
+		<key>52D257AD-DD14-4537-9D27-199DEC9FF3A1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>52D257AD-DD14-4537-9D27-199DEC9FF3A1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>ZERO_CHECK-dxdssbftwejhslfoenmudsbnsgva</string>
+			<key>timeStartedRecording</key>
+			<real>601682759.49690902</real>
+			<key>timeStoppedRecording</key>
+			<real>601682759.64423501</real>
+			<key>title</key>
+			<string>Build target ZERO_CHECK</string>
+			<key>uniqueIdentifier</key>
+			<string>52D257AD-DD14-4537-9D27-199DEC9FF3A1</string>
+		</dict>
+		<key>CE30F31B-A6F3-434B-B792-270AE2A92E4C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.target</string>
+			<key>fileName</key>
+			<string>CE30F31B-A6F3-434B-B792-270AE2A92E4C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>ALL_BUILD-dxdssbftwejhslfoenmudsbnsgva</string>
+			<key>timeStartedRecording</key>
+			<real>601682719.39503503</real>
+			<key>timeStoppedRecording</key>
+			<real>601682719.43839002</real>
+			<key>title</key>
+			<string>Build target ALL_BUILD</string>
+			<key>uniqueIdentifier</key>
+			<string>CE30F31B-A6F3-434B-B792-270AE2A92E4C</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>
