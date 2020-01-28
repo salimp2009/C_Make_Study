@@ -54,7 +54,9 @@ CMAKE_BINARY_DIR = /Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackI
 
 # The main recursive "all" target.
 all: CMakeFiles/hello_cmake02.dir/all
-all: CMakeFiles/message.dir/all
+all: CMakeFiles/message-static.dir/all
+all: CMakeFiles/message-shared.dir/all
+all: CMakeFiles/message-objs.dir/all
 
 .PHONY : all
 
@@ -65,7 +67,9 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/hello_cmake02.dir/clean
-clean: CMakeFiles/message.dir/clean
+clean: CMakeFiles/message-static.dir/clean
+clean: CMakeFiles/message-shared.dir/clean
+clean: CMakeFiles/message-objs.dir/clean
 
 .PHONY : clean
 
@@ -73,7 +77,7 @@ clean: CMakeFiles/message.dir/clean
 # Target rules for target CMakeFiles/hello_cmake02.dir
 
 # All Build rule for target.
-CMakeFiles/hello_cmake02.dir/all: CMakeFiles/message.dir/all
+CMakeFiles/hello_cmake02.dir/all: CMakeFiles/message-static.dir/all
 	$(MAKE) -f CMakeFiles/hello_cmake02.dir/build.make CMakeFiles/hello_cmake02.dir/depend
 	$(MAKE) -f CMakeFiles/hello_cmake02.dir/build.make CMakeFiles/hello_cmake02.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles --progress-num=1,2 "Built target hello_cmake02"
@@ -97,31 +101,85 @@ CMakeFiles/hello_cmake02.dir/clean:
 .PHONY : CMakeFiles/hello_cmake02.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/message.dir
+# Target rules for target CMakeFiles/message-static.dir
 
 # All Build rule for target.
-CMakeFiles/message.dir/all:
-	$(MAKE) -f CMakeFiles/message.dir/build.make CMakeFiles/message.dir/depend
-	$(MAKE) -f CMakeFiles/message.dir/build.make CMakeFiles/message.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles --progress-num=3,4 "Built target message"
-.PHONY : CMakeFiles/message.dir/all
+CMakeFiles/message-static.dir/all: CMakeFiles/message-objs.dir/all
+	$(MAKE) -f CMakeFiles/message-static.dir/build.make CMakeFiles/message-static.dir/depend
+	$(MAKE) -f CMakeFiles/message-static.dir/build.make CMakeFiles/message-static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles --progress-num=5 "Built target message-static"
+.PHONY : CMakeFiles/message-static.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/message.dir/rule: cmake_check_build_system
+CMakeFiles/message-static.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/message.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/message-static.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles 0
-.PHONY : CMakeFiles/message.dir/rule
+.PHONY : CMakeFiles/message-static.dir/rule
 
 # Convenience name for target.
-message: CMakeFiles/message.dir/rule
+message-static: CMakeFiles/message-static.dir/rule
 
-.PHONY : message
+.PHONY : message-static
 
 # clean rule for target.
-CMakeFiles/message.dir/clean:
-	$(MAKE) -f CMakeFiles/message.dir/build.make CMakeFiles/message.dir/clean
-.PHONY : CMakeFiles/message.dir/clean
+CMakeFiles/message-static.dir/clean:
+	$(MAKE) -f CMakeFiles/message-static.dir/build.make CMakeFiles/message-static.dir/clean
+.PHONY : CMakeFiles/message-static.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/message-shared.dir
+
+# All Build rule for target.
+CMakeFiles/message-shared.dir/all: CMakeFiles/message-objs.dir/all
+	$(MAKE) -f CMakeFiles/message-shared.dir/build.make CMakeFiles/message-shared.dir/depend
+	$(MAKE) -f CMakeFiles/message-shared.dir/build.make CMakeFiles/message-shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles --progress-num=4 "Built target message-shared"
+.PHONY : CMakeFiles/message-shared.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/message-shared.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/message-shared.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles 0
+.PHONY : CMakeFiles/message-shared.dir/rule
+
+# Convenience name for target.
+message-shared: CMakeFiles/message-shared.dir/rule
+
+.PHONY : message-shared
+
+# clean rule for target.
+CMakeFiles/message-shared.dir/clean:
+	$(MAKE) -f CMakeFiles/message-shared.dir/build.make CMakeFiles/message-shared.dir/clean
+.PHONY : CMakeFiles/message-shared.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/message-objs.dir
+
+# All Build rule for target.
+CMakeFiles/message-objs.dir/all:
+	$(MAKE) -f CMakeFiles/message-objs.dir/build.make CMakeFiles/message-objs.dir/depend
+	$(MAKE) -f CMakeFiles/message-objs.dir/build.make CMakeFiles/message-objs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles --progress-num=3 "Built target message-objs"
+.PHONY : CMakeFiles/message-objs.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/message-objs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/message-objs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles 0
+.PHONY : CMakeFiles/message-objs.dir/rule
+
+# Convenience name for target.
+message-objs: CMakeFiles/message-objs.dir/rule
+
+.PHONY : message-objs
+
+# clean rule for target.
+CMakeFiles/message-objs.dir/clean:
+	$(MAKE) -f CMakeFiles/message-objs.dir/build.make CMakeFiles/message-objs.dir/clean
+.PHONY : CMakeFiles/message-objs.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

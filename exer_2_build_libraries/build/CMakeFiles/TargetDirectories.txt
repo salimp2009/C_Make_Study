@@ -1,4 +1,6 @@
 /Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/rebuild_cache.dir
-/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/edit_cache.dir
 /Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/hello_cmake02.dir
-/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/message.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/edit_cache.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/message-static.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/message-shared.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/message-objs.dir

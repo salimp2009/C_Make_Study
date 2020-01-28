@@ -14,7 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/message.dir/DependInfo.cmake"
+  "/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles/message-static.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -79,7 +79,7 @@ hello_cmake02_EXTERNAL_OBJECTS =
 
 hello_cmake02: CMakeFiles/hello_cmake02.dir/hello_cmake_02.cpp.o
 hello_cmake02: CMakeFiles/hello_cmake02.dir/build.make
-hello_cmake02: libmessage.a
+hello_cmake02: libmessage-static.a
 hello_cmake02: CMakeFiles/hello_cmake02.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exer_2_build_libraries/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hello_cmake02"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hello_cmake02.dir/link.txt --verbose=$(VERBOSE)

@@ -124,17 +124,43 @@ hello_cmake02/fast:
 .PHONY : hello_cmake02/fast
 
 #=============================================================================
-# Target rules for targets named message
+# Target rules for targets named message-static
 
 # Build rule for target.
-message: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 message
-.PHONY : message
+message-static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 message-static
+.PHONY : message-static
 
 # fast build rule for target.
-message/fast:
-	$(MAKE) -f CMakeFiles/message.dir/build.make CMakeFiles/message.dir/build
-.PHONY : message/fast
+message-static/fast:
+	$(MAKE) -f CMakeFiles/message-static.dir/build.make CMakeFiles/message-static.dir/build
+.PHONY : message-static/fast
+
+#=============================================================================
+# Target rules for targets named message-shared
+
+# Build rule for target.
+message-shared: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 message-shared
+.PHONY : message-shared
+
+# fast build rule for target.
+message-shared/fast:
+	$(MAKE) -f CMakeFiles/message-shared.dir/build.make CMakeFiles/message-shared.dir/build
+.PHONY : message-shared/fast
+
+#=============================================================================
+# Target rules for targets named message-objs
+
+# Build rule for target.
+message-objs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 message-objs
+.PHONY : message-objs
+
+# fast build rule for target.
+message-objs/fast:
+	$(MAKE) -f CMakeFiles/message-objs.dir/build.make CMakeFiles/message-objs.dir/build
+.PHONY : message-objs/fast
 
 hello_cmake_02.o: hello_cmake_02.cpp.o
 
@@ -169,7 +195,7 @@ message.o: message.cpp.o
 
 # target to build an object file
 message.cpp.o:
-	$(MAKE) -f CMakeFiles/message.dir/build.make CMakeFiles/message.dir/message.cpp.o
+	$(MAKE) -f CMakeFiles/message-objs.dir/build.make CMakeFiles/message-objs.dir/message.cpp.o
 .PHONY : message.cpp.o
 
 message.i: message.cpp.i
@@ -178,7 +204,7 @@ message.i: message.cpp.i
 
 # target to preprocess a source file
 message.cpp.i:
-	$(MAKE) -f CMakeFiles/message.dir/build.make CMakeFiles/message.dir/message.cpp.i
+	$(MAKE) -f CMakeFiles/message-objs.dir/build.make CMakeFiles/message-objs.dir/message.cpp.i
 .PHONY : message.cpp.i
 
 message.s: message.cpp.s
@@ -187,7 +213,7 @@ message.s: message.cpp.s
 
 # target to generate assembly for a file
 message.cpp.s:
-	$(MAKE) -f CMakeFiles/message.dir/build.make CMakeFiles/message.dir/message.cpp.s
+	$(MAKE) -f CMakeFiles/message-objs.dir/build.make CMakeFiles/message-objs.dir/message.cpp.s
 .PHONY : message.cpp.s
 
 # Help Target
@@ -197,9 +223,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... hello_cmake02"
-	@echo "... message"
+	@echo "... edit_cache"
+	@echo "... message-static"
+	@echo "... message-shared"
+	@echo "... message-objs"
 	@echo "... hello_cmake_02.o"
 	@echo "... hello_cmake_02.i"
 	@echo "... hello_cmake_02.s"
