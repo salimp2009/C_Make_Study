@@ -1,36 +1,34 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
-project(chapter1_test_02 LANGUAGES CXX)
+project(chapter1_test_04 LANGUAGES CXX)
 
 set (CMAKE_CXX_STANDARD 17)
 set (CMAKE_CXX_STANDARD_REQUIRED 17)
 
-#define an oOBJECT that library files so we can produce
-# either shared or static libraries by using OBJECTS
-# instead of rewriting all files
-add_library(message-objs
-	OBJECT
-		message.hpp
-		message.cpp
-	)
+#creating a new variable
+option(USE_LIBRARY "Compile sources into a library" OFF)
 
-#below is only needed for older compilers
+#ask user to use a library or not
+message(STATUS "Compile sources into a library? ${USE_LIBRARY}")
 
-set_target_properties(message-objs
-	PROPERTIES
-		POSITION_INDEPENDENT_CODE 1
-	)
+#create a global variable
+set(BUILD_SHARED_LIBS OFF)
 
-add_library(message-shared
-	SHARED
-		$<TARGET_OBJECTS:message-objs>
-	)
+#create a variable with a list
+list(APPEND _sources message.hpp message.cpp)
 
-add_library(message-static
-	STATIC
-		$<TARGET_OBJECTS:message-objs>
-	)
+#create an if-else statement based on USE_LIBRARY
 
-add_executable(hello_cmake02 hello_cmake_02.cpp)
+if(USE_LIBRARY)
+	#add_library ; create a static library
+	add_library(message ${_sources})
+	add_executable(hello_cmake02 hello_cmake_02.cpp)
+	target_link_libraries(hello_cmake02 message)
+else()
+	add_executable(hello_cmake02 hello_cmake_02.cpp ${_sources})
+endif()
 
-target_link_libraries(hello_cmake02 message-static)
+
+
+
+

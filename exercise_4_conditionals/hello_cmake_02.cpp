@@ -24,6 +24,13 @@
 // run Cmake command;
 // $ cmake --build .
 
+// if a CONDITIONALS are used then use the following options command
+// $ mkdir -p build
+// $ cd build
+// $ cmake -D USE_LIBRARY=ON ..
+
+// The -D switch is used to set any type of variable for CMake: logicals, paths, and so forth.
+
 
 int main()
 {

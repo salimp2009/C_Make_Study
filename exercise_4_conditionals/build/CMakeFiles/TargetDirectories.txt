@@ -1,0 +1,4 @@
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exercise_4_conditionals/build/CMakeFiles/rebuild_cache.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exercise_4_conditionals/build/CMakeFiles/edit_cache.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exercise_4_conditionals/build/CMakeFiles/hello_cmake02.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exercise_4_conditionals/build/CMakeFiles/message.dir
