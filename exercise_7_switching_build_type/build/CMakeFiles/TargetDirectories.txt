@@ -1,0 +1,3 @@
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exercise_7_switching_build_type/build/CMakeFiles/rebuild_cache.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exercise_7_switching_build_type/build/CMakeFiles/edit_cache.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exercise_7_switching_build_type/build/CMakeFiles/hello_cmake02.dir

@@ -1,0 +1,2 @@
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exercise_6_specify_compiler/build/CMakeFiles/rebuild_cache.dir
+/Users/salimp/Documents/CMake_Game_Robotic_Embedded_C++_PackIT/cmake_study/chapter1/exercise_6_specify_compiler/build/CMakeFiles/edit_cache.dir

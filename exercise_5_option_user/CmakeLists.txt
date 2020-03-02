@@ -1,0 +1,46 @@
+cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+
+include (CMakeDependentOption)
+
+project(chapter1_test_04 LANGUAGES CXX)
+
+set (CMAKE_CXX_STANDARD 17)
+set (CMAKE_CXX_STANDARD_REQUIRED 17)
+
+#creating a new variable
+option(USE_LIBRARY "Compile sources into a library" OFF)
+
+cmake_dependent_option(
+MAKE_STATIC_LIBRARY "Compile sources into a static library" OFF
+"USE_LIBRARY" ON
+)
+
+cmake_dependent_option(
+MAKE_SHARED_LIBRARY "Compile sources into a shared library" ON
+"USE_LIBRARY" ON
+)
+
+#ask user to use a library or not
+message(STATUS "Compile sources into a library? ${USE_LIBRARY}")
+
+#create a global variable
+set(BUILD_SHARED_LIBS OFF)
+
+#create a variable with a list
+list(APPEND _sources message.hpp message.cpp)
+
+#create an if-else statement based on USE_LIBRARY
+
+if(USE_LIBRARY)
+	#add_library ; create a static library
+	add_library(message ${_sources})
+	add_executable(hello_cmake02 hello_cmake_02.cpp)
+	target_link_libraries(hello_cmake02 message)
+else()
+	add_executable(hello_cmake02 hello_cmake_02.cpp ${_sources})
+endif()
+
+
+
+
+
